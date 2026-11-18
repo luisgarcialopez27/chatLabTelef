@@ -1,13 +1,203 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Laboratorio Webex Contact Center</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Laboratorio Webex Contact Center</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(0, 170, 255, 0.30),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 75%,
+            rgba(93, 75, 220, 0.30),
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #06182b 0%,
+            #0b3157 45%,
+            #086b96 100%
+        );
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1000px;
+    padding: 60px 70px;
+
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 28px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,0.30);
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 10px 22px;
+    margin-bottom: 30px;
+
+    border-radius: 40px;
+
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.15);
+
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    margin: 0;
+
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.separator {
+    width: 90px;
+    height: 5px;
+
+    margin: 32px auto;
+
+    border-radius: 10px;
+
+    background: #55c7ff;
+}
+
+.subtitle {
+    max-width: 800px;
+    margin: auto;
+
+    font-size: 28px;
+    line-height: 1.5;
+
+    color: #e2f3ff;
+}
+
+.chat-message {
+    margin-top: 35px;
+
+    font-size: 20px;
+    color: #bddcf0;
+}
+
+.chat-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 22px;
+    padding: 12px 20px;
+
+    border-radius: 30px;
+
+    background: rgba(0,0,0,0.18);
+
+    font-size: 16px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #55e6a5;
+
+    box-shadow:
+        0 0 12px rgba(85,230,165,0.8);
+}
+
+@media (max-width: 700px) {
+
+    .main-container {
+        padding: 20px;
+    }
+
+    .content {
+        padding: 40px 25px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+}
+
+</style>
 </head>
+
+
 <body>
-  <h1>Laboratorio Webex Contact Center</h1>
-  <p>Página de pruebas para Web Chat.</p>
+
+<main class="main-container">
+
+    <section class="content">
+
+        <div class="badge">
+            WEBEX CONTACT CENTER
+        </div>
+
+        <h1>
+            Laboratorio de Atención Digital
+        </h1>
+
+        <div class="separator"></div>
+
+        <p class="subtitle">
+            Prueba nuestro asistente inteligente para atención,
+            consultas y gestión de pagos.
+        </p>
+
+        <p class="chat-message">
+            Inicia una conversación utilizando el chat
+            situado en la esquina inferior derecha.
+        </p>
+
+        <div class="chat-indicator">
+            <span class="status-dot"></span>
+            Servicio de chat disponible
+        </div>
+
+    </section>
+
+</main>
 
   <!-- Webex Contact Center Live Chat -->
   <!-- Pega aqui el snippet ORIGINAL de Webex Connect/Engage. -->
